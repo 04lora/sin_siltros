@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sin Filtros - Archivo Digital Comunitario</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="logo">Sin Filtros</div>
+    <nav class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyecto">Proyecto</a>
+      <a href="#introduccion">Introducción</a>
+      <a href="#tematicas">Temáticas</a>
+      <a href="#reflexion">Reflexión</a>
+      <a href="#equipo">Equipo</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Inicio -->
+  <section id="inicio" class="hero">
+    <h1>Sin Filtros</h1>
+    <p>Archivo digital comunitario para visibilizar y preservar las historias de vida de nuestro barrio.</p>
+  </section>
+
+  <main class="container">
+
+    <!-- Tarjeta del Proyecto -->
+    <section id="proyecto" class="card highlight-card">
+      <h2>📌 Sobre el Proyecto "Sin Filtros"</h2>
+      <p>
+        El proyecto consiste en el diseño y desarrollo de una página web comunitaria cuyo propósito es visibilizar y preservar las historias de vida de los habitantes del barrio, fortaleciendo el sentido de pertenencia y la identidad local.
+      </p>
+      <p>
+        El sitio funcionará como un archivo digital de la comunidad, donde cada historia se presenta en formato de artículo, galería fotográfica y audio (podcast), permitiendo que los vecinos sean protagonistas de su propia narrativa.
+      </p>
+    </section>
+
+    <!-- Introducción -->
+    <section id="introduccion" class="card">
+      <h2>💬 Introducción a la Comunicación</h2>
+      <p>
+        La comunicación es el puente fundamental que conecta nuestras vidas, experiencias e identidades. A través de ella expresamos nuestras realidades, construimos comunidad y transmitimos vivencias de generación en generación.
+      </p>
+      <p>
+        En el contexto de <strong>Sin Filtros</strong>, la comunicación adquiere un valor esencial como herramienta de transformación social, permitiendo que la voz comunitaria se escuche sin intermediarios ni distorsiones.
+      </p>
+    </section>
+
+    <!-- Temáticas -->
+    <section id="tematicas" class="card">
+      <h2>📚 Temáticas Desarrolladas</h2>
+      <div class="grid-3">
+        <div class="mini-card">
+          <h3>Proceso Comunicativo</h3>
+          <p>Análisis de emisor, receptor, mensaje, código, canal y retroalimentación aplicados al desarrollo web social.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Funciones del Lenguaje</h3>
+          <p>Uso del lenguaje expresivo, apelativo y representativo para narrar relatos comunitarios impactantes.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Comunicación Asertiva</h3>
+          <p>Estrategias de escucha activa y diálogo constructivo para la recolección de historias de vida.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflexión -->
+    <section id="reflexion" class="card">
+      <h2>🧠 Reflexión: Reto "Tipos de Comunicación"</h2>
+      <div class="grid-2">
+        <div class="mini-card">
+          <h3>Comunicación Verbal y Escrita</h3>
+          <p>Permite plasmar de forma precisa las narrativas del barrio mediante artículos y publicaciones estructuradas.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Comunicación Auditiva y Visual</h3>
+          <p>El uso de podcasts, fotografías y recursos audiovisuales enriquece el mensaje y transmite emociones auténticas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Equipo con los botones funcionales -->
+    <section id="equipo" class="card">
+      <h2>👥 Integrantes del Equipo</h2>
+      
+      <!-- Botones de Nombres -->
+      <div class="tab-buttons">
+        <button type="button" class="tab-btn active" onclick="cambiarIntegrante(event, 'abraham')">Abraham La Cruz</button>
+        <button type="button" class="tab-btn" onclick="cambiarIntegrante(event, 'samuel')">Samuel Yepes</button>
+        <button type="button" class="tab-btn" onclick="cambiarIntegrante(event, 'jhon')">Jhon Lora</button>
+      </div>
+
+      <!-- Contenido de Abraham -->
+      <div id="abraham" class="tab-content active">
+        <h3>Abraham La Cruz</h3>
+        <p><strong>Descripción:</strong> Encargado de la estructuración de contenidos y la redacción periodística de los relatos comunitarios.</p>
+
+        <h4>Evidencias de Trabajo:</h4>
+        <ul class="lista-evidencias">
+          <li>Redacción de guiones para el podcast de historias de vida.</li>
+          <li>Investigación y recopilación de testimonios locales.</li>
+        </ul>
+
+        <h4>Reflexión Individual:</h4>
+        <div class="quote">
+          "Aprender a escuchar a la comunidad me permitió comprender la comunicación como una herramienta real de empatía e impacto social."
+        </div>
+      </div>
+
+      <!-- Contenido de Samuel -->
+      <div id="samuel" class="tab-content">
+        <h3>Samuel Yepes</h3>
+        <p><strong>Descripción:</strong> Encargado del diseño visual, producción fotográfica y maquetación de las historias de la comunidad.</p>
+
+        <h4>Evidencias de Trabajo:</h4>
+        <ul class="lista-evidencias">
+          <li>Diseño de prototipos de la galería fotográfica.</li>
+          <li>Curaduría de archivos fotográficos del barrio.</li>
+        </ul>
+
+        <h4>Reflexión Individual:</h4>
+        <div class="quote">
+          "Descubrí cómo el diseño visual y la comunicación no verbal complementan la narración oral para rescatar la memoria histórica."
+        </div>
+      </div>
+
+      <!-- Contenido de Jhon -->
+      <div id="jhon" class="tab-content">
+        <h3>Jhon Lora</h3>
+        <p><strong>Descripción:</strong> Encargado de la arquitectura de software, desarrollo frontend y la integración web del archivo digital.</p>
+
+        <h4>Evidencias de Trabajo:</h4>
+        <ul class="lista-evidencias">
+          <li>Desarrollo de la plataforma web interactiva.</li>
+          <li>Implementación de secciones dinámicas para audios y testimonios.</li>
+        </ul>
+
+        <h4>Reflexión Individual:</h4>
+        <div class="quote">
+          "El desarrollo web cobra sentido cuando se pone al servicio de las personas, permitiendo proyectar voces que enriquecen nuestra identidad."
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sin Filtros — Archivo Digital Comunitario</p>
+  </footer>
+
+  <script src="script.js"></script>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sin Filtros — Archivo Digital Comunitario</p>
+  </footer>
+
+  <script>
+    function cambiarIntegrante(evt, nombreId) {
+      var contenidos = document.querySelectorAll('.tab-content');
+      for (var i = 0; i < contenidos.length; i++) {
+        contenidos[i].classList.remove('active');
+      }
+
+      var botones = document.querySelectorAll('.tab-btn');
+      for (var j = 0; j < botones.length; j++) {
+        botones[j].classList.remove('active');
+      }
+
+      var elemento = document.getElementById(nombreId);
+      if (elemento) {
+        elemento.classList.add('active');
+      }
+
+      if (evt && evt.currentTarget) {
+        evt.currentTarget.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>
